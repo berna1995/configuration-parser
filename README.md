@@ -43,6 +43,6 @@ To test the library just use:
 
 To just compile the test file use:
 > make test
-g
+
 To clean the build directory use:
 > make clean
