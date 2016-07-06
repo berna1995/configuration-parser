@@ -35,7 +35,7 @@ else {
 * _/src: contains all the source and header files_
 * _Makefile: the makefile yay!_
 * _LICENSE: the license of the project_
-* _README: this description!_
+* _README.md: this description!_
 
 ## Makefile
 To test the library just use:
@@ -43,6 +43,6 @@ To test the library just use:
 
 To just compile the test file use:
 > make test
-
+g
 To clean the build directory use:
 > make clean
