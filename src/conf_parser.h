@@ -3,7 +3,7 @@
  * @author Matteo Bernabito
  * @brief Header of the configuration parser library
  *
- * This very small library offer the functions to read configuration files formatted as follow:
+ * This very small library offer some functions to read configuration files formatted as follow:
  *
  * 		Key1 = Value1
  *    Key2 = Value2
@@ -40,7 +40,7 @@ typedef struct _conf_entries_t {
 conf_entries_t* configuration_parse_file(FILE* file);
 
 /**
- * Utility function, it reads the the key associated value from the configuration structure.
+ * Utility function, it reads the key associated value from the configuration structure.
  * @param  entries the structure containing all the configuration file entries.
  * @param  key     the key from which we want the associated value.
  * @return the string containing the associated value or NULL if the key is not in the list of entries.
@@ -49,7 +49,7 @@ char* configuration_read_value(conf_entries_t* entries, char* key);
 
 /**
  * Function that frees all the memory used by the configuration structure.
- * @param entries the pointer to the pointer of the configuration structure.
+ * @param entries the pointer to the pointer of the configuration structure, will make *entries = NULL.
  */
 void configuration_free(conf_entries_t** entries);
 
